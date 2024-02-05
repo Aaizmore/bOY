@@ -1,7 +1,6 @@
 import HTTP from 'node:http';
 
 const PORT = process.PORT || 5500;
-const keep_alive = require('./keep_alive.ts')
 const server = HTTP.createServer((request, response) => {
 	response.writeHead(200, {
 		"Access-Control-Allow-Origin": "https://replit.com",
